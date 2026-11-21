@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#092c22">
+  <title>禹宙星海寄願所</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span><span>禹宙星海寄願所<small>YU'S UNIVERSE</small></span></a>
+    <button class="lang" id="langBtn" type="button">繁體中文⌄</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <p class="eyebrow">A LITTLE WISH, A BIG UNIVERSE</p>
+      <h1>把心願，寄往星海</h1>
+      <p class="intro">每一盞天燈，都是一份閃閃發亮的心意。</p>
+      <a class="primary" href="#create">放一盞天燈 <span>↗</span></a>
+      <div class="sky-scene" aria-label="星空中的天燈">
+        <div class="orb orb-one">✦</div><div class="orb orb-two">✧</div>
+        <div class="lantern l1"><span>♡</span></div>
+        <div class="lantern l2"><span>✦</span></div>
+        <div class="lantern l3"><span>☾</span></div>
+        <div class="planet">✧</div>
+      </div>
+      <div class="scroll-note">SCROLL TO EXPLORE　↓</div>
+    </section>
+
+    <section class="section" id="create">
+      <div class="section-heading"><p class="eyebrow">MAKE YOUR OWN</p><h2>製作專屬天燈</h2><p>選擇喜歡的形狀，寫下想寄出的心願。</p></div>
+      <div class="creator">
+        <div class="preview-wrap">
+          <div class="preview-label">你的天燈預覽</div>
+          <div class="preview-lantern" id="previewLantern"><span id="previewMark">♡</span></div>
+          <p class="hint">選擇造型後，預覽會同步更新</p>
+        </div>
+        <form id="wishForm" class="wish-form">
+          <label>選擇天燈造型</label>
+          <div class="shape-options">
+            <button type="button" class="shape active" data-shape="heart" aria-label="愛心">💚</button>
+            <button type="button" class="shape" data-shape="star" aria-label="星星">⭐</button>
+            <button type="button" class="shape" data-shape="moon" aria-label="月亮">🌙</button>
+            <button type="button" class="shape" data-shape="planet" aria-label="星球">🪐</button>
+            <button type="button" class="shape" data-shape="dog" aria-label="小狗">🐶</button>
+          </div>
+          <label for="nickname">你的暱稱</label>
+          <input id="nickname" maxlength="20" placeholder="留下一個喜歡的名字" required>
+          <label for="wish">想寄出的心願</label>
+          <textarea id="wish" maxlength="120" rows="3" placeholder="把想說的話寫在這裡……" required></textarea>
+          <button class="primary submit" type="submit">放飛天燈　↑</button>
+          <p class="hint">此預覽版將天燈保存在目前裝置；跨裝置共享需完成雲端資料庫設定。</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section sky-section" id="sky">
+      <div class="section-heading"><p class="eyebrow">OUR SHARED SKY</p><h2>星海裡的心願</h2><p>讓每一份心意，都有一個發光的位置。</p></div>
+      <div id="wishWall" class="wish-wall"><div class="empty">星海還很安靜，放出第一盞天燈吧 ✦</div></div>
+    </section>
+
+    <section class="section community" id="community">
+      <div class="section-heading"><p class="eyebrow">STAY CONNECTED</p><h2>在星海相遇</h2><p>聊天室、個人頁與限時動態將在雲端服務完成設定後啟用。</p></div>
+      <div class="feature-grid">
+        <article><span>✉</span><h3>訊息交流</h3><p>和同好分享日常與喜歡的舞台。</p></article>
+        <article><span>◌</span><h3>個人星球</h3><p>收藏自己的天燈與個人介紹。</p></article>
+        <article><span>◷</span><h3>星光限動</h3><p>分享短暫閃耀的生活片刻。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="#home"><span>✦</span>星海</a><a href="#create"><span>＋</span>寄願</a><a href="#community"><span>♡</span>交流</a>
+  </nav>
+  <footer>Made of wishes, under one universe · 禹宙星海寄願所</footer>
+  <script src="./app.js"></script>
+</body>
+</html>
