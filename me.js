@@ -1,0 +1,1 @@
+import {json,userFrom} from './_util.js';export async function onRequestGet({request,env}){let u=await userFrom(request,env);return json({user:u||null})}
